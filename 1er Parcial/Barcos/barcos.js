@@ -3,8 +3,8 @@
  */
 
 
-boardSize = 3;
-board = new Array(boardSize);
+var boardSize = 3;
+var board = new Array(boardSize);
 
 
 window.onload = function () {
@@ -19,7 +19,7 @@ window.onload = function () {
     for (var i = 0; i < boardSize; i++) {
         drawing += "<tr>";
         for (var j = 0; j < boardSize; j++) {
-            drawing += "<td id='" + i + "," + j + "' style=' padding: 20px  '></td>";
+            drawing += "<td id='" + i + "," + j + "' style='width: 25px; height: 25px; padding: 20px; cursor:crosshair; text-align: center' onclick='shot(this)'></td>";
             board[i][j] = 0;
         }
         drawing += "</tr>"
@@ -40,14 +40,14 @@ window.onload = function () {
 
 };
 
-gameWin = 0;
-shots = 0;
+var gameWin = 0;
+var shots = 0;
 
-function shot() {
+function shot(square) {
 
-    var coordinate = document.getElementById("coords");
-    var x = parseInt(coordinate.value.split(" ")[0]);
-    var y = parseInt(coordinate.value.split(" ")[1]);
+    //var coordinate = document.getElementById(square);
+    var x = parseInt(square.getAttribute('id').split(",")[0]);
+    var y = parseInt(square.getAttribute('id').split(",")[1]);
 
     if (x >= boardSize || y >= boardSize || isNaN(x) || isNaN(y)) {
         message("Números del 0 al " + (boardSize - 1), "gray");
@@ -76,8 +76,9 @@ function shot() {
         }
     }
 
-    coordinate.value = "";
-    coordinate.focus();
+    var txtBox = document.getElementById('coords');
+    txtBox.value = "";
+    txtBox.focus();
     drawPoints();
 
     if (gameWin == boardSize) {
