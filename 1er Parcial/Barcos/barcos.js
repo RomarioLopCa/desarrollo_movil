@@ -22,7 +22,7 @@ window.onload = function () {
             drawing += "<td id='" + i + "," + j + "' style='width: 25px; height: 25px; padding: 20px; cursor:crosshair; text-align: center' onclick='shot(this)'></td>";
             board[i][j] = 0;
         }
-        drawing += "</tr>"
+        drawing += "</tr>";
     }
     drawing += "</table";
     document.getElementById("board").innerHTML = drawing;
