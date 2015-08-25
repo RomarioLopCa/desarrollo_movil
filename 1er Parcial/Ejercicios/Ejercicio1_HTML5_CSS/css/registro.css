@@ -1,0 +1,28 @@
+section {
+    margin: 20px;
+    background-color: black;
+    color: orangered;
+    font-weight: bolder;
+    padding: 20px;
+    margin: 20px;
+}
+
+fieldset {
+    border: 2px dashed orange;
+}
+
+body {
+    background-color: #888888;
+}
+input[type=submit] {
+    margin: 0 15px;
+    font-weight: bolder;
+    font-size: 25px;
+
+
+}
+input[type=reset] {
+    margin: 0 15px;
+    font-weight: bolder;
+    font-size: 15px;
+}
