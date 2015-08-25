@@ -14,13 +14,14 @@ fieldset {
 body {
     background-color: #888888;
 }
+
 input[type=submit] {
     margin: 0 15px;
     font-weight: bolder;
     font-size: 25px;
 
-
 }
+
 input[type=reset] {
     margin: 0 15px;
     font-weight: bolder;
