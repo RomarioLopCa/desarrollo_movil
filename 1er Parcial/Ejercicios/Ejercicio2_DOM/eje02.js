@@ -36,7 +36,9 @@ function init() {
 window.onload = init;
 
 function toggle(btn) {
-    //Seleccionamos al elemento p
+    //Seleccionamos al elemento p a través de su padre (h1) y el pade de éste
+    // (div) y apartir de ahi buscamos a los tags p (párrafos) y seleccionamos
+    // el primero (porque sabemos que no hay más elementos)
     var p = btn.parentNode.parentNode.getElementsByTagName("p")[0];
 
     //Comprobamos si está desplegado (block) u oculta (none)
