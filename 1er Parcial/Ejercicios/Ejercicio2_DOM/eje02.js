@@ -22,12 +22,15 @@ function init() {
 
     //Seleccionamos todos los elementos con tag button (boton)
     var buttons = document.getElementsByTagName('button');
+
+    //Esta parte se utiliza si es que no le añadimos a los tags
+    //de button el atributo onclick=toggle(this)
     //Le añadimos las funciones on click a todos los botones
-    for (var i = 0; i < buttons.length; i++) {
-        buttons[i].onclick = function () {
-            toggle(this)
-        };
-    }
+    //for (var i = 0; i < buttons.length; i++) {
+    //    buttons[i].onclick = function () {
+    //        toggle(this)
+    //    };
+    //}
 }
 
 window.onload = init;
