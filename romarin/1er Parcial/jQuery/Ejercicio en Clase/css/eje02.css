@@ -7,10 +7,10 @@
     border: 2px solid #000;
 }
 
-#picframe {
+#pic_frame {
     background: #D8B36E;
     padding: 20px;
     width: 250px;
-    display: block;
+    display: none;
     border: 2px solid #000;
 }
