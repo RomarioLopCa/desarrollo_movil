@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Title</title>
+
+    <style type="text/css">
+        input:required:invalid, input:focus:invalid {
+            background-image: url(images/invalid.png);
+            background-position: right top;
+            background-repeat: no-repeat;
+        }
+        input:required:valid {
+            background-image: url(images/valid.png);
+            background-position: right top;
+            background-repeat: no-repeat;
+        }
+
+    </style>
+
+</head>
+<body>
+<form name="input" action="demo.asp" method="get">
+    <p>
+        <label for="email">Email:</label>
+        <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required="required"
+               title="must be in the following order: characters@characters.domain (characters followed by an @ sign, followed by more characters, and then a ".""
+        autocomplete="email" autofocus size="50" />
+    </p>
+    <p>
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lastname">
+    </p>
+    <p>
+        <label for="browser">Browsers:</label>
+        <input type="text" name="browser" list="browsers" />
+
+        <datalist id="browsers">
+            <option value="Chrome" />
+            <option value="Firefox" />
+            <option value="IE">Internet Explorer</option>
+            <option value="Safari" />
+            <option value="Opera" />
+        </datalist>
+    </p>
+    <input type="submit" value="Orden">
+</form>
+
+</body>
+</html>
