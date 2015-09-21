@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejemplo 06: Listview jQuery Mobile</title>
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css"/>
+        <link rel="stylesheet" href="css/jquery.mobile.icons.min.css"/>
+        <link rel="stylesheet" href="css/melidarks.css"/>
+    </head>
+    <body>
+        <section data-role="page" data-theme="a">
+            <header data-role="header" data-position="fixed">
+                <h2>Hello World jQuery Mobile</h2>
+            </header>
+            <div data-role="content">
+                <!--<form class="ui-filtrable">-->
+                <!--<input id="autocomplete" data-type="search" placeholder="Search..."/>-->
+                <!--</form>-->
+
+                <ul data-role="listview" data-inset="true" data-filter="true"
+                    data-filter-placeholder="Search...">
+                    <!--data-filter-reveal="true"-->
+                    <!--data-input="#autocomplete"-->
+
+
+                    <li data-role="list-divider">Sports</li>
+                    <li>
+                        <ul data-inset="true" data-role="listview">
+                            <li><a href="">Baseball <span class="ui-li-count">10</span></a></li>
+                            <li><a href="">Basquetball <span class="ui-li-count">15</span></a></li>
+                            <li><a href="">Soccer <span class="ui-li-count">13</span></a></li>
+                            <li><a href="">Football <span class="ui-li-count">10</span></a></li>
+                            <li><a href="">Tennis <span class="ui-li-count">17</span></a></li>
+                        </ul>
+                    </li>
+
+                    <li data-role="list-divider">Hobbies</li>
+                    <li>
+                        <ul data-inset="true" data-role="listview">
+                            <li><a href="">Movie <span class="ui-li-count">11</span></a></li>
+                            <li><a href="">Video Games <span class="ui-li-count">9</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <footer data-role="footer" data-position="fixed">
+                Melissa González Arce
+            </footer>
+        </section>
+    </body>
+</html>
