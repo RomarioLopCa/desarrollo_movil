@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Barcos</title>
-    <script src="barcos.js"></script>
-    <script src="main.css"></script>
-</head>
-<body>
-<h1 style="text-align: center">Realizado por: Romario y Melissa</h1>
-<div style="width: 50%; float: left">
-    <div id="board">
+    <head>
+        <meta charset="UTF-8">
+        <title>Barcos</title>
+        <script src="barcos.js"></script>
+        <script src="main.css"></script>
+    </head>
+    <body>
+        <h1 style="text-align: center">Realizado por: Romario y Melissa</h1>
 
-    </div>
-    <form action="" onsubmit="return false;">
+        <div style="width: 50%; float: left">
+            <div id="board">
 
-        <p>Atacar en las coordenadas</p>
+            </div>
+            <form action="" onsubmit="return false;">
 
-        <p><input type="text" id="coords"/></p>
+                <p>Atacar en las coordenadas</p>
 
-        <p><input type="submit" value="MATAR" onclick="shot()"/></p>
-    </form>
-</div>
+                <p><input type="text" id="coords"/></p>
 
-<div style="width: 50%; float: right">
-    <h1>Puntuación</h1>
+                <p><input type="submit" value="MATAR" onclick="shot()"/></p>
+            </form>
+        </div>
 
-    <p>Barcos destruidos: <span id="destroyed_ships"></span></p>
-    <p>Barcos por destruir: <span id="ships_left"></span></p>
-    <p>Tiros hechos: <span id="shots_done"></span></p>
-    <hr/>
-    <p>Mensaje: <span id="message"></span></p>
-</div>
+        <div style="width: 50%; float: right">
+            <h1>Puntuación</h1>
+
+            <p>Barcos destruidos: <span id="destroyed_ships"></span></p>
+
+            <p>Barcos por destruir: <span id="ships_left"></span></p>
+
+            <p>Tiros hechos: <span id="shots_done"></span></p>
+            <hr/>
+            <p>Mensaje: <span id="message"></span></p>
+        </div>
 
 
-</body>
+    </body>
 </html>

@@ -1,12 +1,13 @@
-input{
+input {
     width: 50px;
 }
-body{
+
+body {
     color: cadetblue;
     background-color: #eeeeee;
     font-family: Helvetica;
 }
 
-#formulario1{
+#formulario1 {
     color: #F47D31;
 }

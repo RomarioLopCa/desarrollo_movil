@@ -1,118 +1,126 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Registro</title>
-    <link rel="stylesheet" href="estilos.css"/>
-</head>
-<body>
-<a href="Practica1.html"><button>Regresar</button></a>
-    <form method="post" action="#">
-        <section>
-            <fieldset>
-                <article>
-                    <header>
-                        <h3>Datos Personales</h3>
-                    </header>
-                    <table>
-                        <tr>
-                            <td><p align="right">Nombre: </p></td>
-                            <td><input type="text" id="nombre"size="12" required="required"/><br/></td>
-                        </tr>
-                        <tr>
-                            <td><p align="right">Apellido: </p></td>
-                            <td><input type="text" id="apellido"size="12" required="required"/><br/></td>
-                        </tr>
-                        <tr>
-                            <td><p align="right">Fecha de Nacimiento: </p></td>
-                            <td><input type="date" id="nacimiento"size="12" required="required"/><br/></td>
-                        </tr>
-                        <tr>
-                            <td><p align="right">E-mail: </p></td>
-                            <td><input type="email" id="email"size="12" required="required"/><br/></td>
-                        </tr>
-                        <tr>
-                            <td><p align="right">URL: </p></td>
-                            <td><input type="url" id="url"size="12" required="required"/><br/></td>
-                        </tr>
-                        <tr>
-                            <td><p align="right">Phone: </p></td>
-                            <td><input type="tel" id="tel"size="12" required="required"/><br/></td>
-                        </tr>
-                    </table>
-                </article>
-            </fieldset>
-        </section>
-        <section>
-            <fieldset>
-                <article>
-                    <header>
-                        <h3>Dirección de Facturación</h3>
-                    </header>
+    <head>
+        <meta charset="UTF-8">
+        <title>Registro</title>
+        <link rel="stylesheet" href="estilos.css"/>
+    </head>
+    <body>
+        <a href="Practica1.html">
+            <button>Regresar</button>
+        </a>
+
+        <form method="post" action="#">
+            <section>
+                <fieldset>
+                    <article>
+                        <header>
+                            <h3>Datos Personales</h3>
+                        </header>
+                        <table>
+                            <tr>
+                                <td><p align="right">Nombre: </p></td>
+                                <td><input type="text" id="nombre" size="12" required="required"/><br/></td>
+                            </tr>
+                            <tr>
+                                <td><p align="right">Apellido: </p></td>
+                                <td><input type="text" id="apellido" size="12" required="required"/><br/></td>
+                            </tr>
+                            <tr>
+                                <td><p align="right">Fecha de Nacimiento: </p></td>
+                                <td><input type="date" id="nacimiento" size="12" required="required"/><br/></td>
+                            </tr>
+                            <tr>
+                                <td><p align="right">E-mail: </p></td>
+                                <td><input type="email" id="email" size="12" required="required"/><br/></td>
+                            </tr>
+                            <tr>
+                                <td><p align="right">URL: </p></td>
+                                <td><input type="url" id="url" size="12" required="required"/><br/></td>
+                            </tr>
+                            <tr>
+                                <td><p align="right">Phone: </p></td>
+                                <td><input type="tel" id="tel" size="12" required="required"/><br/></td>
+                            </tr>
+                        </table>
+                    </article>
+                </fieldset>
+            </section>
+            <section>
+                <fieldset>
+                    <article>
+                        <header>
+                            <h3>Dirección de Facturación</h3>
+                        </header>
                         <table>
                             <tr>
                                 <td><p align="right">Dirección: </p></td>
-                                <td><input type="text" id="direccion"size="12" required="required"/><br/></td>
+                                <td><input type="text" id="direccion" size="12" required="required"/><br/></td>
                             </tr>
                             <tr>
                                 <td><p align="right">Código Postal: </p></td>
-                                <td><input type="text" id="CP"size="12" required="required"/><br/></td>
+                                <td><input type="text" id="CP" size="12" required="required"/><br/></td>
                             </tr>
                             <tr>
                                 <td><p align="right">Ciudad: </p></td>
-                                <td><input type="text" id="ciudad"size="12" required="required"/><br/></td>
+                                <td><input type="text" id="ciudad" size="12" required="required"/><br/></td>
                             </tr>
                             <tr>
                                 <td><p align="right">Estado: </p></td>
-                                <td><input type="text" id="estado"size="12" required="required"/><br/></td>
+                                <td><input type="text" id="estado" size="12" required="required"/><br/></td>
                             </tr>
                             <tr>
                                 <td><p align="right">País: </p></td>
-                                <td><input type="text" id="pais"size="12" required="required"/><br/></td>
+                                <td><input type="text" id="pais" size="12" required="required"/><br/></td>
                             </tr>
                             <tr>
 
                         </table>
-                </article>
-            </fieldset>
-        </section>
-        <section>
-            <fieldset>
-                <article>
-                    <header>
-                        <h3>Pago</h3>
-                    </header>
-                    <table>
+                    </article>
+                </fieldset>
+            </section>
+            <section>
+                <fieldset>
+                    <article>
+                        <header>
+                            <h3>Pago</h3>
+                        </header>
+                        <table>
                             <tr>
                                 <td><p align="right">Tipo de Tarjeta: </p></td>
                                 <td>
-                                    <input type="radio" name="tarjeta" value="visa">Visa    <input type="radio" name="tarjeta" value="mastercard">MasterCard   <input type="radio" name="tarjeta" value="amex">Amex
+                                    <input type="radio" name="tarjeta" value="visa">Visa <input type="radio"
+                                                                                                name="tarjeta"
+                                                                                                value="mastercard">MasterCard
+                                    <input type="radio" name="tarjeta" value="amex">Amex
                                 </td>
                             </tr>
                             <tr>
                                 <td><p align="right">Nombre: </p></td>
-                                <td><input type="text" id="nombretarjeta"size="12" required="required"/><br/></td>
+                                <td><input type="text" id="nombretarjeta" size="12" required="required"/><br/></td>
                             </tr>
                             <tr>
                                 <td><p align="right">Número de Tarjeta: </p></td>
-                                <td><input type="text" id="numtarjeta"size="12" maxlength="16" required="required"/><br/></td>
+                                <td><input type="text" id="numtarjeta" size="12" maxlength="16"
+                                           required="required"/><br/></td>
                             </tr>
                             <tr>
                                 <td><p align="right">Código de Seguridad: </p></td>
-                                <td><input type="text" id="codigo"size="12" maxlength="3" required="required"/><br/></td>
+                                <td><input type="text" id="codigo" size="12" maxlength="3" required="required"/><br/>
+                                </td>
                             </tr>
                             <tr>
                                 <td><p align="right">Fecha de expiración: </p></td>
-                                <td><input type="date" id="exp"size="12" required="required"/><br/></td>
+                                <td><input type="date" id="exp" size="12" required="required"/><br/></td>
                             </tr>
                         </table>
-                </article>
-            </fieldset>
-        </section>
-        <section>
-            <input type="submit" value="Ordenar">
-            <input type= "reset" value="Reiniciar">
-        </section>
-    </form>
-</body>
+                    </article>
+                </fieldset>
+            </section>
+            <section>
+                <input type="submit" value="Ordenar">
+                <input type="reset" value="Reiniciar">
+            </section>
+        </form>
+    </body>
 </html>
