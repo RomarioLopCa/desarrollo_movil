@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Ejemplo 05: Listview JQuery Mobile</title>
+    <link rel="stylesheet" href="CSS/jquery.mobile-1.4.5.min.css">
+    <!--<link rel="stylesheet" href="CSS/themes/demo_theme.min.css">-->
+    <script src="JS/jquery-2.1.4.min.js"></script>
+    <script src="JS/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <section data-role="page" data-position="fixed" data-theme="a">
+        <header data-role="header">
+            <h2>Hello world jQuery Mobile</h2>
+        </header>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Search...">
+                <li data-role="list-divider">Sports</li>
+                <li>
+                    <a href=""><img src="img/Baseball.png">Baseball
+                        <p>Major Ligue</p>
+                    </a>
+                        <a href="#buy" data-rel="popup" data-position-to="window" data-transition="pop">
+                            <h3>Purchase images</h3>
+                        </a>
+
+                </li>
+                <li>
+                    <a href=""><img src="img/basketball.png">Basquetball
+                        <p>FIBA Américas</p>
+                    </a>
+                        <a href="#buy2" data-rel="popup" data-position-to="window" data-transition="pop">
+                            <h3>Purchase images</h3>
+                        </a>
+
+                </li>
+                <li>
+                    <a href=""><img src="img/Soccer.png">Soccer
+                        <p>Champions Ligue</p>
+                    </a>
+                </li>
+                <li><a href=""><img src="img/football.png">Footbal<p>Superbowl</p></a></li>
+                <li><a href=""><img src="img/tennis.png">Tennis<p>U.S. Open</p></a></li>
+                <li data-role="list-divider">Hobbies</li>
+                <li><a href=""><img src="img/movie.png">Movies</a></li>
+                <li><a href=""><img src="img/game.png">Video Games</a></li>
+            </ul>
+        </div>
+        <div data-role="popup" id="buy">
+            <h3>Purchase images?</h3>
+            <p>Your downloading will begin immediately</p>
+            <a href="#" data-role="button" data-rel="back" data-icon="check" data-inline="true" data-mini="true">Buy: $10.00</a>
+            <a href="#" data-role="button" data-rel="back" data-icon="delete" data-inline="true" data-mini="true">Cancel</a>
+        </div>
+        <div data-role="popup" id="buy2">
+            <h3>Purchase images?</h3>
+            <p>Your downloading will begin immediately</p>
+            <a href="#" data-role="button" data-rel="back" data-icon="check" data-inline="true" data-mini="true">Buy: $10.00</a>
+            <a href="#" data-role="button" data-rel="back" data-icon="delete" data-inline="true" data-mini="true">Cancel</a>
+        </div>
+        <footer data-role="footer" data-position="fixed">
+            Astrid Briceño
+        </footer>
+    </section>
+</body>
+</html>
