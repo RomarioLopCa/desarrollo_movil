@@ -9,9 +9,10 @@
         <link rel="stylesheet" href="css/AppConsejo.css"/>
         <title>Consejo Estudiantil</title>
         <style>
-            .center-wrapper{
+            .center-wrapper {
                 text-align: center;
             }
+
             .center-wrapper * {
                 margin: 0 auto;
             }
@@ -28,20 +29,20 @@
 
         <section data-role="page" id="index">
             <header data-role="header" data-position="fixed">
-                <h2 style="font-family: monospace">Consejo Estudiantil</h2>
+                <h2 style="font-family: Arial">Consejo Estudiantil</h2>
             </header>
 
             <div data-role="content">
                 <ul data-role="listview" data-inset="true">
                     <li><a href="quienesSomos.html">Quienes Somos</a></li>
                     <li><a href="#events" data-icon="arrow-r">Eventos</a></li>
+                    <li><a href="#integrantes" data-icon="star">Integrantes</a></li>
+                    <li><a href="#redes" data-icon="search">Redes Sociales</a></li>
                 </ul>
             </div>
             <div>
-                <img src="img/Roma.jpg" width="50%" height="50%" data-position="" alt=""/>
-            </div>
-            <div>
-                <p class="center-wrapper"><a href="suggestion.html" data-role="button" style='width:179px; height:20px' data-transition="fade">Danos tus
+                <p class="center-wrapper"><a href="suggestion.html" data-role="button" style='width:179px; height:20px'
+                                             data-transition="fade">Danos tus
                     Sugerencias</a>
                 </p>
             </div>
@@ -71,6 +72,42 @@
                         <li><a href=""><img src="img/peliculas.png">Proyección de Peliculas</a></li>
                     </ul>
                 </div>
+            </div>
+        </section>
+
+        <section data-role="page" id="integrantes">
+            <header data-role="header">
+                <h2 style="font-family: Arial">Integrantes</h2>
+                <a href="index.html#index"
+                   class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-left ui-shadow ui-corner-all"
+                   data-role="button" role="button">Atrás</a>
+            </header>
+            <div data-role="content">
+                <ul data-role="listview" data-inset="true">
+                    <li><a href="#"><img src="img/academica.png">Coord. Académica</a></li>
+                    <li><a href="#" data-icon="arrow-r"><img src="img/cultural.png">Coord. Cultural</a></li>
+                    <li><a href="#" data-icon="star"><img src="img/1443611138_handdrawn-basketball.png">Coord. Deportiva</a></li>
+                    <li><a href="#" data-icon="star"><img src="img/salud.png">Coord. Salud</a></li>
+                    <li><a href="#" data-icon="star"><img src="img/aniversario.png">Coord. Social</a></li>
+                    <li><a href="#" data-icon="star"><img src="img/rsu.png">Coord. RSU</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section data-role="page" id="redes">
+            <header data-role="header">
+                <h2 style="font-family: Arial">Redes Sociales</h2>
+                <a href="landing.html#index"
+                   class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-left ui-shadow ui-corner-all"
+                   data-role="button" role="button">Atrás</a>
+            </header>
+            <div data-role="content">
+                <ul data-role="listview" data-inset="true">
+                    <li><a href="www.facebook.com/cestudiantilfmat"><img src="img/face.png">Consejo Estudiantil FMAT</a>
+                    </li>
+                    <li><a href="www.twitter.com" data-icon="arrow-r"><img src="img/twitter.png">CE_FMAT</a></li>
+                    <li><a href="www.instagram.com" data-icon="star"><img src="img/insta.png">CE_FMAT</a></li>
+                </ul>
             </div>
         </section>
     </body>
