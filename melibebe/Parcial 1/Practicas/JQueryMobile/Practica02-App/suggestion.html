@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css"/>
+        <link rel="stylesheet" href="css/jquery.mobile.icons.min.css"/>
+        <link rel="stylesheet" href="css/AppConsejo.css"/>
+        <title></title>
+    </head>
+    <body>
+        <section data-role="page">
+            <header data-role="header" data-position="fixed">
+                <h2 style="font-family: Arial">Sugerencias</h2>
+                <a href="landing.html#index"
+                   class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-left ui-shadow ui-corner-all"
+                   data-role="button" role="button">Cancelar</a>
+            </header>
+            <div data-role="content">
+                <form data-role="form">
+
+                    <p>
+                        <p style="color: black">
+                        <b><font size="2" face="Verdana">Nombre
+                            <input type="text" name="nombre" size="30"></font>
+                        </b>
+                    </p>
+
+                    <p>
+                        <b>
+                            <font size="2" color="#000000" face="Verdana">*E-mail
+                                <input type="text" name="submit_by" size="30"></font>
+                        </b>
+                    </p>
+
+                    <p><font color="#000000">
+                        <b><font size="2" face="Verdana">*Comentario
+                            <textarea cols="35" rows="5" name="comentario"></textarea></font>
+                        </b></font>
+                    </p>
+
+                    <p align="center"><font face="Verdana" size="2">
+                        <input type="submit" value="Enviar" name="submit">
+                        <input type="reset" value="Borrar" name="reset">
+                    </font>
+                    </p>
+                    <br>
+                    <br>
+                </form>
+            </div>
+        </section>
+    </body>
+</html>

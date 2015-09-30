@@ -8,6 +8,14 @@
         <link rel="stylesheet" href="css/jquery.mobile.icons.min.css"/>
         <link rel="stylesheet" href="css/AppConsejo.css"/>
         <title>Consejo Estudiantil</title>
+        <style>
+            .center-wrapper{
+                text-align: center;
+            }
+            .center-wrapper * {
+                margin: 0 auto;
+            }
+        </style>
     </head>
     <body>
         <section data-role="page">
@@ -20,18 +28,49 @@
 
         <section data-role="page" id="index">
             <header data-role="header" data-position="fixed">
-                <h2 style="font-family: Arial">Consejo Estudiantil</h2>
+                <h2 style="font-family: monospace">Consejo Estudiantil</h2>
             </header>
+
             <div data-role="content">
                 <ul data-role="listview" data-inset="true">
-                    <li><a href="">Quienes Somos</a></li>
-                    <li><a href="">Eventos</a></li>
+                    <li><a href="quienesSomos.html">Quienes Somos</a></li>
+                    <li><a href="#events" data-icon="arrow-r">Eventos</a></li>
                 </ul>
-                <!--<div data-role="collapsible">-->
-                    <!--<h3> Próximos Eventos</h3>-->
+            </div>
+            <div>
+                <img src="img/Roma.jpg" width="50%" height="50%" data-position="" alt=""/>
+            </div>
+            <div>
+                <p class="center-wrapper"><a href="suggestion.html" data-role="button" style='width:179px; height:20px' data-transition="fade">Danos tus
+                    Sugerencias</a>
+                </p>
+            </div>
+        </section>
 
-                    <!--<p>Hola</p>-->
-                <!--</div>-->
+
+        <section data-role="page" id="events">
+            <header data-role="header" data-position="fixed">
+                <h2 style="font-family: Arial">Eventos</h2>
+                <a href="landing.html#index"
+                   class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-left ui-shadow ui-corner-all"
+                   data-role="button" role="button">Atrás</a>
+            </header>
+            <div data-role="content">
+
+                <div data-role="collapsible">
+                    <h3>Eventos Realizados</h3>
+                    <ul data-role="listview" data-inset="true">
+                        <li><a href="oneEvent.html"><img src="img/flag.png">Rally Cultural</a></li>
+                        <li><a href=""><img src="img/aniversario.png">Semana de Aniversario</a></li>
+                    </ul>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Eventos Próximos</h3>
+                    <ul data-role="listview" data-inset="true">
+                        <li><a href=""><img src="img/balon.png">Torneos de Futbol</a></li>
+                        <li><a href=""><img src="img/peliculas.png">Proyección de Peliculas</a></li>
+                    </ul>
+                </div>
             </div>
         </section>
     </body>
