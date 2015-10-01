@@ -21,33 +21,46 @@
                 <form data-role="form">
 
                     <p>
-                        <p style="color: black">
-                        <b><font size="2" face="Verdana">Nombre
-                            <input type="text" name="nombre" size="30"></font>
+                        <b style="color: black">
+                            *Nombre<input type="text" name="nombre" size="30" required>
                         </b>
                     </p>
 
                     <p>
-                        <b>
-                            <font size="2" color="#000000" face="Verdana">*E-mail
-                                <input type="text" name="submit_by" size="30"></font>
+                        <b style="color: black">
+                            *E-mail<input type="email" name="email" size="30" required>
                         </b>
                     </p>
 
-                    <p><font color="#000000">
-                        <b><font size="2" face="Verdana">*Comentario
-                            <textarea cols="35" rows="5" name="comentario"></textarea></font>
-                        </b></font>
+                    <p>
+                        <b style="color: black">
+                            *Comentario<textarea cols="35" rows="5" name="comentario" required></textarea>
+                        </b>
                     </p>
 
-                    <p align="center"><font face="Verdana" size="2">
-                        <input type="submit" value="Enviar" name="submit">
-                        <input type="reset" value="Borrar" name="reset">
-                    </font>
+                    <p align="center" >
+                        <a href="#enviarsugerencia" data-rel="popup" data-position-to="window" data-transition="pop">
+                            <input type="submit" value="Enviar Comentario" name="submit">
+                        </a>
+                        <a href="#borrarcampos" data-rel="popup" data-position-to="window" data-transition="pop">
+                            <input type="reset" value="Borrar Campos" name="reset">
+                        </a>
                     </p>
                     <br>
                     <br>
                 </form>
+            </div>
+            <div>
+                <div data-role="popup" id="enviarsugerencia">
+                    <h3>Sugerencia Enviada</h3>
+                    <p>¡Gracias por tus comentarios!</p>
+                    <a href="#" data-role="button" data-rel="back" data-icon="check" data-inline="true" data-mini="true">Aceptar</a>
+                </div>
+                <div data-role="popup" id="borrarcampos">
+                    <h3>Eliminar Campos</h3>
+                    <p>¿Está seguro que quiere reiniciar el formulario?</p>
+                    <a href="#" data-role="button" data-rel="back" data-icon="check" data-inline="true" data-mini="true">Aceptar</a>
+                </div>
             </div>
         </section>
     </body>
