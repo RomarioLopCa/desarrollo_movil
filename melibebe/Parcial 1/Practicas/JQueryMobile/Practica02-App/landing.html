@@ -31,7 +31,7 @@
             <header data-role="header" data-position="fixed">
                 <h2 style="font-family: Arial">Consejo Estudiantil</h2>
             </header>
-
+//APLICACION DE PAGINAS EXTERNAS
             <div data-role="content">
                 <ul data-role="listview" data-inset="true">
                     <li><a href="quienesSomos.html">Quienes Somos</a></li>
@@ -42,8 +42,7 @@
             </div>
             <div>
                 <p class="center-wrapper"><a href="suggestion.html" data-role="button" style='width:179px; height:20px'
-                                             data-transition="fade">Danos tus
-                    Sugerencias</a>
+                                             data-transition="fade">Danos tus Sugerencias</a>
                 </p>
             </div>
         </section>
@@ -57,7 +56,7 @@
                    data-role="button" role="button">Atrás</a>
             </header>
             <div data-role="content">
-
+//APLICACION DEL COLLAPSIBLE
                 <div data-role="collapsible">
                     <h3>Eventos Realizados</h3>
                     <ul data-role="listview" data-inset="true">
@@ -74,7 +73,7 @@
                 </div>
             </div>
         </section>
-
+//APLICACION DE PAGINAS INTERNAS
         <section data-role="page" id="integrantes">
             <header data-role="header">
                 <h2 style="font-family: Arial">Integrantes</h2>
@@ -84,16 +83,36 @@
             </header>
             <div data-role="content">
                 <ul data-role="listview" data-inset="true">
+                    <li><a href="#cultural" data-icon="arrow-r"><img src="img/cultural.png">Coord. Cultural</a></li>
                     <li><a href="#"><img src="img/academica.png">Coord. Académica</a></li>
-                    <li><a href="#" data-icon="arrow-r"><img src="img/cultural.png">Coord. Cultural</a></li>
-                    <li><a href="#" data-icon="star"><img src="img/1443611138_handdrawn-basketball.png">Coord. Deportiva</a></li>
+                    <li><a href="#" data-icon="star"><img src="img/1443611138_handdrawn-basketball.png">Coord. Deportiva</a>
+                    </li>
                     <li><a href="#" data-icon="star"><img src="img/salud.png">Coord. Salud</a></li>
                     <li><a href="#" data-icon="star"><img src="img/aniversario.png">Coord. Social</a></li>
                     <li><a href="#" data-icon="star"><img src="img/rsu.png">Coord. RSU</a></li>
                 </ul>
             </div>
         </section>
-
+//APLICACION BOTÓN ROLE=BACK Y LISTAS NORMALES
+        <section data-role="page" id="cultural">
+            <header data-role="header">
+                <h2 style="font-family: Arial">Coord. Cultural</h2>
+                <a data-role="button" data-rel="back" role="button" data-icon="back">Atrás</a>
+                <a href="index.html#index" class="ui-btn-right ui-btn ui-icon-home ui-shadow ui-corner-all"
+                   data-role="button">Inicio</a>
+            </header>
+            <div>
+                <h2 style="font-family: Arial">Integrantes</h2>
+                <ul>
+                    <li>Romario López</li>
+                    <li>Juan Pérez</li>
+                    <li>Ana Gongora</li>
+                    <li>Rodrigo Estrada</li>
+                    <li>Fulano</li>
+                </ul>
+            </div>
+        </section>
+//APLICACION PAGINA INTERNA
         <section data-role="page" id="redes">
             <header data-role="header">
                 <h2 style="font-family: Arial">Redes Sociales</h2>
@@ -101,13 +120,14 @@
                    class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-left ui-shadow ui-corner-all"
                    data-role="button" role="button">Atrás</a>
             </header>
-            <div data-role="content">
-                <ul data-role="listview" data-inset="true">
-                    <li><a href="www.facebook.com/cestudiantilfmat"><img src="img/face.png">Consejo Estudiantil FMAT</a>
-                    </li>
-                    <li><a href="www.twitter.com" data-icon="arrow-r"><img src="img/twitter.png">CE_FMAT</a></li>
-                    <li><a href="www.instagram.com" data-icon="star"><img src="img/insta.png">CE_FMAT</a></li>
-                </ul>
+//APLICACION DE CONTROLGROUP
+            <div data-role="controlgroup">
+                <a href="#" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Facebook: Consejo Estudiantil
+                    FMAT</a>
+                <a href="#" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Twitter: CE_FMAT</a>
+                <a href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-left">Instagram: CE_FMAT</a>
+                <a href="#" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">E-mail:
+                    cestudiantil@gmail.com</a>
             </div>
         </section>
     </body>

@@ -8,6 +8,18 @@
         <link rel="stylesheet" href="css/jquery.mobile.icons.min.css"/>
         <link rel="stylesheet" href="css/AppConsejo.css"/>
         <title></title>
+
+        <script>
+            function showSuccessMessage() {
+                $('#enviar_sugerencia').popup('open');
+
+                resetForm();
+            }
+
+            function resetForm() {
+                $('#suggestion_form').find('input, textarea').val('');
+            }
+        </script>
     </head>
     <body>
         <section data-role="page">
@@ -17,8 +29,9 @@
                    class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-left ui-shadow ui-corner-all"
                    data-role="button" role="button">Cancelar</a>
             </header>
+//APLICACION DE FORMULARIOS VALIDADOS.
             <div data-role="content">
-                <form data-role="form">
+                <form data-role="form" id="suggestion_form" onsubmit="showSuccessMessage(); return false;" method="post">
 
                     <p>
                         <b style="color: black">
@@ -38,30 +51,35 @@
                         </b>
                     </p>
 
-                    <p align="center" >
-                        <a href="#enviarsugerencia" data-rel="popup" data-position-to="window" data-transition="pop">
-                            <input type="submit" value="Enviar Comentario" name="submit">
-                        </a>
+                    <p align="center">
+                        <input type="submit" value="Enviar Comentario" name="submit">
+
                         <a href="#borrarcampos" data-rel="popup" data-position-to="window" data-transition="pop">
                             <input type="reset" value="Borrar Campos" name="reset">
                         </a>
                     </p>
                     <br>
                     <br>
+
+                    <div data-role="popup" id="enviar_sugerencia">
+                        <h3>Sugerencia Enviada</h3>
+
+                        <p>¡Gracias por tus comentarios!</p>
+
+                        <a href="#" data-role="button" data-rel="back" data-icon="check" data-inline="true"
+                           data-mini="true">Aceptar</a>
+                    </div>
+                    <div data-role="popup" id="borrarcampos">
+                        <h3>Eliminar Campos</h3>
+
+                        <p>¿Está seguro que quiere reiniciar el formulario?</p>
+                        <a href="#" data-role="button" data-rel="back" data-icon="check" data-inline="true"
+                           data-mini="true" onclick="resetForm()">Aceptar</a>
+                    </div>
                 </form>
+
             </div>
-            <div>
-                <div data-role="popup" id="enviarsugerencia">
-                    <h3>Sugerencia Enviada</h3>
-                    <p>¡Gracias por tus comentarios!</p>
-                    <a href="#" data-role="button" data-rel="back" data-icon="check" data-inline="true" data-mini="true">Aceptar</a>
-                </div>
-                <div data-role="popup" id="borrarcampos">
-                    <h3>Eliminar Campos</h3>
-                    <p>¿Está seguro que quiere reiniciar el formulario?</p>
-                    <a href="#" data-role="button" data-rel="back" data-icon="check" data-inline="true" data-mini="true">Aceptar</a>
-                </div>
-            </div>
+
         </section>
     </body>
 </html>
